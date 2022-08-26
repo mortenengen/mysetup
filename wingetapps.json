@@ -1,0 +1,99 @@
+{
+    "$schema" : "https://aka.ms/winget-packages.schema.2.0.json",
+    "Sources" : 
+    [
+        {
+            "Packages" : 
+            [
+                {
+                    "PackageIdentifier" : "7zip.7zip"
+                },
+                {
+					"PackageIdentifier" : "Adobe.Acrobat.Reader.64-bit"
+				},
+                {
+					"PackageIdentifier" : "ArtifexSoftware.GhostScript"
+				},
+                {
+					"PackageIdentifier" : "ChristianSchenk.MiKTeX"
+				},
+                {
+					"PackageIdentifier" : "Docker.DockerDesktop"
+				},
+				{
+                    "PackageIdentifier" : "Ghisler.TotalCommander"
+                },
+				{
+                    "PackageIdentifier" : "Ghostgum.GSview"
+                },
+                {
+                    "PackageIdentifier" : "GIMP.GIMP"
+                },
+                {
+					"PackageIdentifier" : "GitHub.GitHubDesktop"
+				},
+                {
+					"PackageIdentifier" : "Google.Chrome"
+				},
+                {
+					"PackageIdentifier" : "Heroku.HerokuCLI"
+				},
+                {
+					"PackageIdentifier" : "Inkscape.Inkscape"
+				},
+                {
+					"PackageIdentifier" : "Logitech.Options"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudio.2019.BuildTools"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.VisualStudio.2022.BuildTools"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.WindowsSDK"
+				},
+				{
+					"PackageIdentifier" : "Mozilla.Firefox"
+				},
+                {
+					"PackageIdentifier" : "Notion.Notion"
+				},
+                {
+					"PackageIdentifier" : "OpenJS.NodeJS.LTS"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3.7"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3.8"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3.9"
+				},
+				{
+					"PackageIdentifier" : "Python.Python.3.10"
+				},
+                {
+					"PackageIdentifier" : "ShiningLight.OpenSSL"
+				},
+                {
+					"PackageIdentifier" : "SlackTechnologies.Slack"
+				},
+                {
+					"PackageIdentifier" : "SumatraPDF.SumatraPDF"
+				},
+                {
+					"PackageIdentifier" : "Zoom.Zoom"
+				}
+            ],
+            "SourceDetails" : 
+			{
+				"Argument" : "https://cdn.winget.microsoft.com/cache",
+				"Identifier" : "Microsoft.Winget.Source_8wekyb3d8bbwe",
+				"Name" : "winget",
+				"Type" : "Microsoft.PreIndexed.Package"
+			}
+        }
+    ]
+}
