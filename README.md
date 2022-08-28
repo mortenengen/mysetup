@@ -17,13 +17,43 @@ git clone https://github.com/mortenengen/mysetup
 cd mysetup
 ```
 
-## 👨‍💻 Basic apps and terminal experience
+## ⛰ Basic apps
 Install basic apps using winget:
 
 ```pwsh
 winget import basicwingetapps.json
 ```
 
+## 🐍 Other apps
+Install other apps from `winget`:
+
+```pwsh
+sudo winget import wingetapps.json
+```
+
+Upgrade `pip` and `wheel` for Python 3.7, 3.8, 3.9 and 3.10:
+
+```pwsh
+$pyversions = "3.7", "3.8", "3.9", "3.10"
+foreach ($version in $pyversions) {
+    py -$version -m pip install --upgrade pip wheel
+}
+```
+
+Install chocolatey:
+
+```pwsh
+Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
+```
+
+Install packages from chocolatey:
+
+```pwsh
+choco upgrade chocolatey
+choco install chocopackages.config
+```
+
+## 👨‍💻 Terminal experience
 Install font for oh-my-posh:
 
 ```pwsh
@@ -47,25 +77,6 @@ oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\nu4a.omp.json" | Invoke-Exp
 Reload the profile script:
 ```pwsh
 . $PROFILE
-```
-
-## 🐍 Other apps
-Install other apps from `winget`:
-
-```pwsh
-sudo winget import wingetapps.json
-```
-
-Install chocolatey:
-
-```pwsh
-Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
-```
-
-Install packages from chocolatey:
-
-```pwsh
-choco install chocopackages.config
 ```
 
 ## 👀 VS Code
