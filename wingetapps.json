@@ -45,6 +45,15 @@
 					"PackageIdentifier" : "Logitech.Options"
 				},
 				{
+					"PackageIdentifier" : "Microsoft.Office"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.OneDrive"
+				},
+				{
+					"PackageIdentifier" : "Microsoft.Teams"
+				},
+				{
 					"PackageIdentifier" : "Microsoft.VisualStudio.2019.BuildTools"
 				},
 				{
