@@ -31,12 +31,13 @@ Install other apps from `winget`:
 sudo winget import wingetapps.json
 ```
 
-Upgrade `pip` and `wheel` for Python 3.7, 3.8, 3.9 and 3.10:
+Upgrade `pip` and `wheel` for Python 3.7, 3.8, 3.9 and 3.10, and install packages from `requirements.txt`:
 
 ```pwsh
 $pyversions = "3.7", "3.8", "3.9", "3.10"
 foreach ($version in $pyversions) {
     py -$version -m pip install --upgrade pip wheel
+    py -$version -m pip install -r requirements.txt
 }
 ```
 
