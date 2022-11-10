@@ -83,6 +83,9 @@
 				{
 					"PackageIdentifier" : "Python.Python.3.10"
 				},
+				{
+					"PackageIdentifier" : "Python.Python.3.11"
+				},
                 {
 					"PackageIdentifier" : "ShiningLight.OpenSSL"
 				},
