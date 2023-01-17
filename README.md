@@ -69,7 +69,7 @@ Edit the profile script:
 code $PROFILE
 ```
 
-Add the following line
+Add the following lines
 
 ```pwsh
 oh-my-posh init pwsh --config "$env:POSH_THEMES_PATH\space.omp.json" | Invoke-Expression
