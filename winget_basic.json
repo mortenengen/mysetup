@@ -1,0 +1,23 @@
+{
+	"packages" : 
+	[
+		{
+			"id" : "Git.Git"
+		},
+		{
+			"id" : "gerardog.gsudo"
+		},
+		{
+			"id" : "JanDeDobbeleer.OhMyPosh"
+		},
+		{
+			"id" : "Microsoft.PowerShell"
+		},
+		{
+			"id" : "Microsoft.WindowsTerminal"
+		},
+		{
+			"id" : "Microsoft.VisualStudioCode"
+		}
+	]
+}
