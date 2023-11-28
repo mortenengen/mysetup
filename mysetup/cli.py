@@ -37,13 +37,16 @@ def wingetall(ls: bool = False):
 
 
 @app.command(name='py')
-def install_python(ls: bool = False):
+def install_python(ls: bool = False, force: bool = False):
     """Install or upgrade all Python versions."""
     with open('python_versions.txt', encoding='utf-8') as infile:
         py_versions = [version.strip('\n') for version in infile.readlines()]
 
     basic_args = ['winget', 'install']
-    overrides = ['--override', '\"/passive include_launcher=0\"']
+    add_args = ['--override', '\"/passive include_launcher=0\"']
+
+    if force:
+        add_args.insert(0, '--force')
 
     # Install all Python versions
     for version in py_versions:
@@ -51,7 +54,7 @@ def install_python(ls: bool = False):
             print(f'Python {version}')
         else:
             subprocess.run(
-                [*basic_args, f'python.python.{version}', *overrides]
+                [*basic_args, f'python.python.{version}', *add_args]
             )
 
     # Last, make sure Python Launchers gets installed
