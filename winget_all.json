@@ -11,9 +11,6 @@
 			"id" : "ArtifexSoftware.GhostScript"
 		},
 		{
-			"id" : "ChristianSchenk.MiKTeX"
-		},
-		{
 			"id" : "Docker.DockerDesktop"
 		},
 		{
@@ -48,6 +45,9 @@
 		},
 		{
 			"id" : "Microsoft.WindowsSDK"
+		},
+		{
+			"id" : "MiKTeX.MiKTeX"
 		},
 		{
 			"id" : "Mozilla.Firefox"
