@@ -1,0 +1,71 @@
+{
+	"packages" : 
+	[
+		{
+			"id" : "7zip.7zip"
+		},
+		{
+			"id" : "Adobe.Acrobat.Reader.64-bit"
+		},
+		{
+			"id" : "ArtifexSoftware.GhostScript"
+		},
+		{
+			"id" : "Docker.DockerDesktop"
+		},
+		{
+			"id" : "Dropbox.Dropbox"
+		},
+		{
+			"id" : "Ghostgum.GSview"
+		},
+		{
+			"id" : "GIMP.GIMP"
+		},
+		{
+			"id" : "Inkscape.Inkscape"
+		},
+		{
+			"id" : "Logitech.OptionsPlus"
+		},
+		{
+			"id" : "Microsoft.Office"
+		},
+		{
+			"id" : "Microsoft.OneDrive"
+		},
+		{
+			"id" : "Microsoft.Teams"
+		},
+		{
+			"id" : "Microsoft.VisualStudio.2019.BuildTools"
+		},
+		{
+			"id" : "Microsoft.VisualStudio.2022.BuildTools"
+		},
+		{
+			"id" : "Microsoft.WindowsSDK"
+		},
+		{
+			"id" : "MiKTeX.MiKTeX"
+		},
+		{
+			"id" : "Mozilla.Firefox"
+		},
+		{
+			"id" : "Notion.Notion"
+		},
+		{
+			"id" : "OpenJS.NodeJS.LTS"
+		},
+		{
+			"id" : "SumatraPDF.SumatraPDF"
+		},
+		{
+			"id": "WinSCP.WinSCP"
+		},
+		{
+			"id" : "Zoom.Zoom"
+		}
+	]
+}
