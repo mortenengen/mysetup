@@ -1,71 +1,77 @@
 {
-	"packages" : 
+	"packages": 
 	[
 		{
-			"id" : "7zip.7zip"
+			"id": "7zip.7zip"
 		},
 		{
-			"id" : "Adobe.Acrobat.Reader.64-bit"
+			"id": "Adobe.Acrobat.Reader.64-bit"
 		},
 		{
-			"id" : "ArtifexSoftware.GhostScript"
+			"id": "ArtifexSoftware.GhostScript"
 		},
 		{
-			"id" : "Docker.DockerDesktop"
+			"id": "Docker.DockerDesktop"
 		},
 		{
-			"id" : "Dropbox.Dropbox"
+			"id": "Dropbox.Dropbox"
 		},
 		{
-			"id" : "Ghostgum.GSview"
+			"id": "GIMP.GIMP"
 		},
 		{
-			"id" : "GIMP.GIMP"
+			"id": "ImageMagick.ImageMagick"
 		},
 		{
-			"id" : "Inkscape.Inkscape"
+			"id": "Inkscape.Inkscape"
 		},
 		{
-			"id" : "Logitech.OptionsPlus"
+			"id": "Logitech.OptionsPlus"
 		},
 		{
-			"id" : "Microsoft.Office"
+			"id": "Microsoft.Office"
 		},
 		{
-			"id" : "Microsoft.OneDrive"
+			"id": "Microsoft.OneDrive"
 		},
 		{
-			"id" : "Microsoft.Teams"
+			"id": "Microsoft.Teams"
 		},
 		{
-			"id" : "Microsoft.VisualStudio.2019.BuildTools"
+			"id": "Microsoft.VisualStudio.2019.BuildTools"
 		},
 		{
-			"id" : "Microsoft.VisualStudio.2022.BuildTools"
+			"id": "Microsoft.VisualStudio.2022.BuildTools"
 		},
 		{
-			"id" : "Microsoft.WindowsSDK"
+			"id": "Microsoft.WindowsSDK"
 		},
 		{
-			"id" : "MiKTeX.MiKTeX"
+			"id": "MiKTeX.MiKTeX"
 		},
 		{
-			"id" : "Mozilla.Firefox"
+			"id": "Mozilla.Firefox"
 		},
 		{
-			"id" : "Notion.Notion"
+			"id": "Notion.Notion"
 		},
 		{
-			"id" : "OpenJS.NodeJS.LTS"
+			"id": "OpenJS.NodeJS.LTS"
 		},
 		{
-			"id" : "SumatraPDF.SumatraPDF"
+			"id": "StrawberryPerl.StrawberryPerl"
+		},
+		{
+			"id": "SumatraPDF.SumatraPDF"
+		},
+		{
+			"id": "VideoLAN.VLC"
 		},
 		{
 			"id": "WinSCP.WinSCP"
 		},
 		{
-			"id" : "Zoom.Zoom"
+			"id": "Zoom.Zoom"
 		}
 	]
 }
