@@ -18,10 +18,12 @@ def install_with_winget_from_json(json_filename, ls: bool = False):
     with open(json_filename, encoding='utf-8') as jsonfile:
         winget_apps = json.load(jsonfile)
     for app in winget_apps['packages']:
+        app_id = app['id']
         if ls:
-            print(app['id'])
+            print(f'🎠 {app_id}')
         else:
-            subprocess.run(['winget', 'install', app['id']])
+            print(f'🚗 Install {app_id}')
+            subprocess.run(['winget', 'install', app_id])
 
 
 @app.command(name='wgb')
@@ -51,8 +53,9 @@ def install_python(ls: bool = False, force: bool = False):
     # Install all Python versions
     for version in py_versions:
         if ls:
-            print(f'Python {version}')
+            print(f'🎠 Python {version}')
         else:
+            print(f'🚗 Install Python {version}')
             subprocess.run(
                 [*basic_args, f'python.python.{version}', *add_args]
             )
@@ -69,7 +72,9 @@ def choco(ls: bool = False):
     with open('choco_all.json', encoding='utf-8') as jsonfile:
         choco_apps = json.load(jsonfile)
     for app in choco_apps['packages']:
+        app_id = app['id']
         if ls:
-            print(app['id'])
+            print(f'🎠 {app_id}')
         else:
-            subprocess.run(['choco', 'upgrade', app['id']])
+            print(f'🚗 Install {app_id}')
+            subprocess.run(['choco', 'upgrade', app_id])
