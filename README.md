@@ -17,28 +17,41 @@ git clone https://github.com/mortenengen/mysetup
 cd mysetup
 ```
 
-## ⛰ Basic apps
-Install basic apps using winget:
+
+## 🐍 Install `mysetup` CLI
+
+Install Python:
 
 ```pwsh
-winget import basicwingetapps.json
+winget install python.python.3.12
 ```
 
-## 🐍 Other apps
-Install other apps from `winget`:
+Create virtual environment and install mysetup CLI:
 
 ```pwsh
-sudo winget import wingetapps.json
+py -m venv venv
+venv\scripts\activate
+py -m pip install -e ..\mysetup
 ```
 
-Upgrade `pip` and `wheel` for Python 3.7, 3.8, 3.9 and 3.10, and install packages from `requirements.txt`:
+## 📦 Install packages
+
+Python releases:
 
 ```pwsh
-$pyversions = "3.7", "3.8", "3.9", "3.10"
-foreach ($version in $pyversions) {
-    py -$version -m pip install --upgrade pip wheel
-    py -$version -m pip install -r requirements.txt
-}
+mys py
+```
+
+Basic packages from winget:
+
+```pwsh
+mys wgb
+```
+
+Other packages from winget:
+
+```pwsh
+mys wga
 ```
 
 Install chocolatey:
@@ -47,11 +60,10 @@ Install chocolatey:
 Set-ExecutionPolicy Bypass -Scope Process -Force; [System.Net.ServicePointManager]::SecurityProtocol = [System.Net.ServicePointManager]::SecurityProtocol -bor 3072; iex ((New-Object System.Net.WebClient).DownloadString('https://community.chocolatey.org/install.ps1'))
 ```
 
-Install packages from chocolatey:
+Packages from chocolatey:
 
 ```pwsh
-choco upgrade chocolatey
-choco install chocopackages.config
+mys ch
 ```
 
 ## 👨‍💻 Terminal experience
